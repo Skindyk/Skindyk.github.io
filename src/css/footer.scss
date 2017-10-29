@@ -1,0 +1,130 @@
+footer {
+  color: #ffffff;
+  .upper-footer {
+    background-color: #58585a;
+    padding: 35px 0;
+    .footer-flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      .footer-logo {
+        margin-bottom: 20px;
+      }
+      .footer-contact {
+        margin-bottom: 20px;
+        text-align: center;
+        a {
+          color: #ffffff;
+          font-family: PFBeauSansPro-Regular, sans-serif;
+          font-size: 24px;
+          &:hover {
+            color: #d8262e;
+            transition: all 0.5s;
+          }
+        }
+        address {
+          margin-top: 15px;
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+      .footer-menu {
+        ul {
+          li {
+            margin-bottom: 5px;
+            a {
+              color: #ffffff;
+              font-family: PFBeauSansPro-Bold, sans-serif;
+              font-size: 17px;
+              &:hover {
+                color: #d8262e;
+                transition: all 0.5s;
+              }
+            }
+            .dropdown:after {
+              content: "\f078";
+              margin-left: 5px;
+              top: 5px;
+              font-family: FontAwesome;
+              font-style: normal;
+              font-size: 10px;
+              font-weight: normal;
+              text-decoration: inherit;
+              position: absolute;
+            }
+          }
+        }
+      }
+    }
+  }
+  .lover-footer {
+    padding: 20px 0 15px;
+    background-color: #4a4a4b;
+    .footer-flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      .copyright {
+        margin-bottom: 10px;
+        font-family: PFBeauSansPro-Thin, sans-serif;
+        font-size: 14px;
+      }
+      .made-by {
+        font-family: PFBeauSansPro-Thin, sans-serif;
+        font-size: 14px;
+        a {
+          font-family: PFBeauSansPro-Regular, sans-serif;
+          font-size: 15px;
+          color: #ffffff;
+          &:hover {
+            color: #d8262e;
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  footer {
+    .upper-footer {
+      .footer-flex {
+        margin-bottom: 0;
+        flex-direction: row;
+      }
+    }
+    .lover-footer {
+      .footer-flex {
+        flex-direction: row;
+        text-align: justify;
+        .copyright {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  footer {
+    .upper-footer {
+      .footer-flex {
+        .footer-menu {
+          ul {
+            display: inline-block;
+            li {
+              float: left;
+              margin-left: 25px;
+              &:first-child {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
