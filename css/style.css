@@ -5869,13 +5869,16 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    header .header_flex .header_logo p {
-      margin-left: 110px;
-      color: #58595b;
-      font-family: PFBeauSansPro-Regular, sans-serif;
-      font-size: 15px;
-      font-weight: 300; }
+    header .header_flex .header_logo {
+      margin-bottom: 20px; }
+      header .header_flex .header_logo p {
+        margin-left: 110px;
+        color: #58595b;
+        font-family: PFBeauSansPro-Regular, sans-serif;
+        font-size: 15px;
+        font-weight: 300; }
     header .header_flex .header_contact {
+      margin-bottom: 20px;
       text-align: center; }
       header .header_flex .header_contact a {
         color: #58595b;
@@ -5889,12 +5892,101 @@ header {
         margin-top: 15px; }
         header .header_flex .header_contact address a {
           font-size: 16px; }
-    header .header_flex .header_menu .navbar {
-      background-color: transparent;
-      border: none; }
-      header .header_flex .header_menu .navbar .open a {
-        background-color: transparent;
-        color: inherit; }
+    header .header_flex .header_menu_top {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-bottom: 35px; }
+      header .header_flex .header_menu_top .contact_us {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 20px;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; }
+        header .header_flex .header_menu_top .contact_us li {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          margin-left: 10px; }
+          header .header_flex .header_menu_top .contact_us li .fa {
+            color: #d8262e;
+            font-size: 22px;
+            line-height: 28px; }
+          header .header_flex .header_menu_top .contact_us li a {
+            margin-left: 5px;
+            color: #a3a3a3;
+            font-family: PFBeauSansPro-Bbook, sans-serif;
+            font-size: 14px; }
+            header .header_flex .header_menu_top .contact_us li a:hover {
+              -webkit-transition: all 0.5s;
+              transition: all 0.5s;
+              color: #d8262e; }
+          header .header_flex .header_menu_top .contact_us li:first-child {
+            margin-left: 0; }
+      header .header_flex .header_menu_top .header_search {
+        display: none; }
+        header .header_flex .header_menu_top .header_search .fa-search {
+          color: #d0d0d0; }
+          header .header_flex .header_menu_top .header_search .fa-search:hover {
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+            color: #d8262e; }
+      header .header_flex .header_menu_top .lang_select {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        header .header_flex .header_menu_top .lang_select li a {
+          margin-left: 2px;
+          padding: 10px 12px;
+          background-color: #fafafa;
+          color: #a3a3a3;
+          font-family: PFBeauSansPro-Regular, sans-serif;
+          font-size: 14px; }
+          header .header_flex .header_menu_top .lang_select li a:hover {
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+            background-color: #d8262e;
+            color: #ffffff; }
+        header .header_flex .header_menu_top .lang_select .active a {
+          color: #d8262e; }
+    header .header_flex .header_menu_bottom {
+      text-align: center; }
+      header .header_flex .header_menu_bottom ul li {
+        margin-bottom: 5px; }
+        header .header_flex .header_menu_bottom ul li a {
+          color: #58595b;
+          font-family: PFBeauSansPro-Bold, sans-serif;
+          font-size: 17px; }
+          header .header_flex .header_menu_bottom ul li a:hover {
+            color: #d8262e;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s; }
+        header .header_flex .header_menu_bottom ul li .dropdown:after {
+          content: "\f078";
+          margin-left: 5px;
+          top: 5px;
+          font-family: FontAwesome;
+          font-style: normal;
+          font-size: 10px;
+          font-weight: normal;
+          text-decoration: inherit;
+          position: absolute; }
 
 @media (min-width: 768px) {
   header .header_flex {
@@ -5902,6 +5994,28 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; } }
+
+@media (min-width: 1024px) {
+  header .header_flex .header_logo {
+    margin-bottom: 0; }
+  header .header_flex .header_contact {
+    margin-bottom: 0; }
+  header .header_flex .header_menu_top {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    header .header_flex .header_menu_top .contact_us {
+      margin-bottom: 0; }
+    header .header_flex .header_menu_top .header_search {
+      display: inherit; }
+  header .header_flex .header_menu_bottom ul {
+    display: inline-block; }
+    header .header_flex .header_menu_bottom ul li {
+      float: left;
+      margin-left: 25px; }
+      header .header_flex .header_menu_bottom ul li:first-child {
+        margin-left: 0; } }
 
 .doc_anna {
   background-color: #0e4675; }
@@ -6055,13 +6169,16 @@ header {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; }
+              flex-direction: column;
+      max-width: 490px; }
       .appointment-form .form form input, .appointment-form .form form select {
         margin-bottom: 20px;
-        padding: 20px 25px;
-        max-width: 490px;
+        padding: 16px 25px;
         border: 1px solid #e1e1e1;
-        background-color: #ffffff; }
+        background-color: #ffffff;
+        color: #b0b0b0;
+        font-family: PFBeauSansPro-Regular, sans-serif;
+        font-size: 16px; }
         .appointment-form .form form input::-webkit-input-placeholder, .appointment-form .form form select::-webkit-input-placeholder {
           color: #b0b0b0;
           font-family: PFBeauSansPro-Regular, sans-serif;
@@ -6078,20 +6195,35 @@ header {
           color: #b0b0b0;
           font-family: PFBeauSansPro-Regular, sans-serif;
           font-size: 16px; }
+      .appointment-form .form form input:last-child {
+        margin-bottom: 0;
+        padding: 13px 25px; }
       .appointment-form .form form select {
+        position: relative;
         color: #b0b0b0;
         font-family: PFBeauSansPro-Regular, sans-serif;
         font-size: 16px;
+        appearance: none;
         -moz-appearance: none;
         /* Firefox */
         -webkit-appearance: none;
         /* Safari and Chrome */ }
+      .appointment-form .form form div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
       .appointment-form .form form p {
         color: #58585a;
         font-family: PFBeauSansPro-Regular, sans-serif;
         font-size: 17px; }
       .appointment-form .form form .sbm_btn {
-        margin: 0 auto;
+        margin: 30px auto 0;
         padding: 10px 25px;
         max-width: 190px;
         border-radius: 23px;
