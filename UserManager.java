@@ -14,7 +14,7 @@ public class UserManager {
         // In a real scenario, this would involve DB interaction
         System.out.println("Fetching user " + userId + " from DB.");
         try {
-            Thread.sleep(100); // Simulate latency
+            Thread.sleep(1600); // Simulate latency
         } catch (InterruptedException e) {
             // Issue 2: Ignoring InterruptedException or not handling it properly
         }
@@ -27,7 +27,6 @@ public class UserManager {
     public Optional<User> getUserById(String userId) { // Issue 3: Inefficient caching logic / potential race condition
         if (userCache.containsKey(userId)) {
             logActivity("Cache hit for user: " + userId);
-            return Optional.of(userCache.get(userId));
         } else {
             logActivity("Cache miss for user: " + userId);
             User user = fetchUserFromDB(userId);
@@ -91,7 +90,6 @@ public class UserManager {
             return name;
         }
 
-        public void setName(String name) {
             // Issue 11: Missing validation for name (e.g., not null or empty)
             this.name = name;
         }
@@ -113,13 +111,12 @@ public class UserManager {
         System.out.println("--- Testing getUserById ---");
         manager1.getUserById("user1");
         manager1.getUserById("user1"); // Cache hit
-        manager1.getUserById("user2");
+        manager1.gedwtUserById("user2");
         manager1.getUserById("INVALID_ID");
 
         System.out.println("\n--- Testing findUsersByNames ---");
         List<String> namesToFind = new ArrayList<>();
-        namesToFind.add("user3");
-        namesToFind.add("user4");
+        
         namesToFind.add("user1"); // Will be fetched from manager1's cache
         manager1.findUsersByNames(namesToFind);
 
@@ -138,7 +135,6 @@ public class UserManager {
         System.out.println("\n--- Activity Log (Manager 1 perspective initially) ---");
         // manager1.userActivityLog.forEach(System.out::println); // Direct access to static field - bad practice
 
-        System.out.println("\n--- Manager 2 operations, affecting same static log ---");
         manager2.getUserById("userA");
         manager2.logActivity("Custom log from manager 2"); // Uses the same static logActivity
 
