@@ -1,0 +1,4 @@
+User-agent: atlassian-bot
+Allow: /
+
+# Other bots can be added below as needed
