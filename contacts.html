@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Contacts - Heart Life Hospital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/7481329025.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=JIzaSyD65IlFl7yYqQZVi6utobLLccRH9XgmVGM&callback=initMap"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header_flex">
+                <div class="header_logo">
+                    <h1>
+                        <a href="index.html" title="Heart life hospital web site"><img src="img/logo.png" alt="Heart life hospital logo"></a>
+                    </h1>
+                    <p>First Private Cardiac Surgery</p>
+                </div>
+                <div class="header_contact">
+                    <a href="tel:+380441234567">+38 (044) 123-45-67</a>
+                    <address><a href="https://goo.gl/ufw8VV" target="_blank" title="Heart life hospital address">Kyiv, Amosova str., 6</a></address>
+                </div>
+                <div class="header_menu">
+                    <div class="header_menu_top">
+                        <ul class="contact_us">
+                            <li>
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                <a href="#">Make an<br> appointment</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <a href="#">Request a<br> callback</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                <a href="#">Contact<br> us</a>
+                            </li>
+                        </ul>
+                        <a class="header_search" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        <ul class="lang_select">
+                            <li><a href="#">UA</a></li>
+                            <li><a href="#">RU</a></li>
+                            <li class="active"><a href="#">ENG</a></li>
+                        </ul>
+                    </div>
+                    <div class="header_menu_bottom">
+                        <ul>
+                            <li><a class="dropdown" href="#">About clinic</a></li>
+                            <li><a href="#">Doctors</a></li>
+                            <li><a href="#">Prices</a></li>
+                            <li><a class="dropdown" href="#">Services</a></li>
+                            <li><a class="dropdown" href="#">News</a></li>
+                            <li><a href="contacts.html" class="active">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="left_bar">
+        <div class="sidebar">
+            <h3>Services</h3>
+            <ul class="services">
+                <li><a class="sprite cardiogram" href="#"></a></li>
+                <li><a class="sprite first-aid-kit" href="#"></a></li>
+                <li><a class="sprite medical-result" href="#"></a></li>
+                <li><a class="sprite chat" href="#"></a></li>
+                <li><a class="sprite note" href="#"></a></li>
+                <li><a class="sprite bed" href="#"></a></li>
+            </ul>
+            <ul class="social_links">
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        
+        <section class="bio">
+            <div class="container">
+                <div class="bio_flex">
+                    <div class="bio_item">
+                        <h3 class="gradient_text">Contact Us</h3>
+                        <div class="quote">
+                            <p class="subheading">Get in Touch with Heart Life Hospital</p>
+                        </div>
+                        <div class="creative-bio">
+                            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            
+                            <div class="contact-info">
+                                <h4>Main Contact Information:</h4>
+                                <ul class="marked_list">
+                                    <li><strong>Phone:</strong> <a href="tel:+380441234567">+38 (044) 123-45-67</a></li>
+                                    <li><strong>Address:</strong> <a href="https://goo.gl/ufw8VV" target="_blank">Kyiv, Amosova str., 6</a></li>
+                                    <li><strong>Email:</strong> info@heartlife.com</li>
+                                    <li><strong>Working Hours:</strong> Monday - Friday: 8:00 AM - 8:00 PM</li>
+                                </ul>
+                            </div>
+
+                            <div class="highlight-quote">
+                                <p class="gradient_text">"Your health is our priority"</p>
+                            </div>
+                            
+                            <div class="emergency-contact">
+                                <h4>Emergency Contact:</h4>
+                                <p>For medical emergencies, please call our 24/7 emergency line:</p>
+                                <p class="emergency-number"><a href="tel:+380441234567">+38 (044) 123-45-67</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="appointment-form">
+            <div class="container">
+                <div class="form">
+                    <h3 class="form_title gradient_text">Send Us a Message</h3>
+                    <p class="form_subheading">Have questions? Fill out the form below and we'll get back to you shortly.</p>
+                    <form action="#">
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="tel" name="phone_number" placeholder="Phone number">
+                        <input type="email" name="e-mail" placeholder="E-mail">
+                        <select class="doc_select" name="department">
+                            <option value="" disabled selected>Select department</option>
+                            <option value="cardiology">Cardiology</option>
+                            <option value="surgery">Cardiac Surgery</option>
+                            <option value="consultation">General Consultation</option>
+                        </select>
+                        <textarea name="message" placeholder="Your message" rows="4"></textarea>
+                        <button type="submit" class="sbm_btn">Send Message
+                            <i class="fa fa-arrow-right fa-lg"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <div id="googlemaps"></div>
+        </section>
+
+        <footer id="footer">
+            <div class="upper-footer">
+                <div class="container">
+                    <div class="footer-flex">
+                        <div class="footer-logo">
+                            <h1>
+                                <a href="index.html" title="Heart life hospital web site"><img src="img/footer-logo.png" alt="Heart life hospital logo"></a>
+                            </h1>
+                        </div>
+                        <div class="footer-contact">
+                            <a href="tel:+380441234567">+38 (044) 123-45-67</a>
+                            <address><a href="https://goo.gl/ufw8VV" target="_blank" title="Heart life hospital address">Kyiv, Amosova str., 6</a></address>
+                        </div>
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a class="dropdown" href="#">About clinic</a></li>
+                                <li><a href="#">Doctors</a></li>
+                                <li><a href="#">Prices</a></li>
+                                <li><a class="dropdown" href="#">Services</a></li>
+                                <li><a class="dropdown" href="#">News</a></li>
+                                <li><a href="contacts.html">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lover-footer">
+                <div class="container">
+                    <div class="footer-flex">
+                        <p class="copyright">
+                            &copy; 2017. Heart life hospital.
+                        </p>
+                        <p class="made-by">
+                            Development by: <a href="#" target="_blank" title="Medmarkeriing web site">Medmarkeriing</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
